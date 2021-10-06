@@ -1,0 +1,5 @@
+wptb_app/**/.gradle/
+**/*.lock
+**/node_modules/
+
+**/(build|dist)/
