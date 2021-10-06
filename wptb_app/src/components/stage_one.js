@@ -5,6 +5,7 @@ import { StyleSheet } from "react-native";
 import { Button, Input, ListItem, Text } from "react-native-elements";
 import { object, string } from "yup";
 import { AppContext } from "../context/app_context";
+import { MainLogo } from "../utils/tools";
 
 const StageOne = () => {
   const context = useContext(AppContext);
@@ -41,7 +42,7 @@ const StageOne = () => {
       >
         {({ handleChange, handleBlur, handleSubmit, values, touched, errors }) => (
           <Fragment>
-            <Text style={{ fontFamily: "Pacifico-Regular" }}>Who pays the bill ?</Text>
+            <MainLogo />
             <Input
               placeholder="Add name here"
               leftIcon={{ type: "antdesign", name: "adduser" }}
